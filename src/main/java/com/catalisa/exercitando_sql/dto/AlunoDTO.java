@@ -1,30 +1,26 @@
 package com.catalisa.exercitando_sql.dto;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 
 public class AlunoDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+
+    private Integer id;
 
     private String nome;
 
     private int idade;
 
-    public AlunoDTO(Long id, String nome, int idade) {
+    public AlunoDTO(Integer id, String nome, int idade) {
         this.id = id;
         this.nome = nome;
         this.idade = idade;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
