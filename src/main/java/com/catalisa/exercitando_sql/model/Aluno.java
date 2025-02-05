@@ -2,22 +2,17 @@ package com.catalisa.exercitando_sql.model;
 
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 
 @Entity
-public class Alunos {
+public class Aluno {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nome;
 
     private int idade;
 
-    public Alunos(Long id, String nome, int idade) {
+    public Aluno(Long id, String nome, int idade) {
         this.id = id;
         this.nome = nome;
         this.idade = idade;
