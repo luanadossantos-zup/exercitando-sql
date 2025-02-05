@@ -15,12 +15,14 @@ public class AlunoService {
     @Autowired
     private AlunoRepository alunoRepository;
 
-    public List<AlunoDTO> listarTodosAlunos () {
-        return alunoRepository
+    public List<AlunoDTO> listarTodosAlunos() {
+        List<AlunoDTO> alunos = alunoRepository
                 .findAll()
                 .stream()
                 .map(entity -> new AlunoDTO(entity.getId(), entity.getNome(), entity.getIdade()))
                 .collect(Collectors.toList());
+        System.out.println(alunos);
+        return alunos;
     }
 
 }
