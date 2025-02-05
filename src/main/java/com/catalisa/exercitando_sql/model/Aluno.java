@@ -12,7 +12,11 @@ public class Aluno {
 
     private int idade;
 
-    public Aluno(Long id, String nome, int idade) {
+    public Aluno() {
+
+    }
+
+    public Aluno(Integer id, String nome, int idade) {
         this.id = id;
         this.nome = nome;
         this.idade = idade;
