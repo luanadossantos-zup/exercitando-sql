@@ -20,7 +20,7 @@ public class AlunoController {
     }
 
     @GetMapping
-    public ResponseEntity<List<AlunoDTO>> listarTodosProdutos () {
+    public ResponseEntity<List<AlunoDTO>> listarTodosAlunos () {
         return ResponseEntity.ok(alunoService.listarTodosAlunos());
     }
 }
